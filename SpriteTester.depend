@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1386757472 source:c:\game dev\spritetester\26_motion.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<stdio.h>
+	<string>
+
