@@ -628,7 +628,7 @@ bool loadMedia()
 
 	//Load dot texture
 	// Kuno addition: load the kunoichi walk strip instead of the dot
-	if( !gKunoTexture.loadFromFile( "./Kunowalkstrip.png" ) )
+	if( !gKunoTexture.loadFromFile( "./png/Kunowalkstrip.png" ) )
 	{
 		printf( "Failed to load dot texture!\n" );
 		success = false;

@@ -1639,27 +1639,27 @@ bool loadMedia()
 
 
 	// Kuno addition: load the kunoichi walk strip instead of the dot
-	if( !gJillTexture.loadFromFile( "./JillSprites.png" ) )
+	if( !gJillTexture.loadFromFile( "./png/JillSprites.png" ) )
 	{
 		printf( "Failed to load dot texture!\n" );
 		success = false;
 	}
-		if( !gBGTexture.loadFromFile( "./BackGround.png" ) )
+		if( !gBGTexture.loadFromFile( "./png/BackGround.png" ) )
 	{
 		printf( "Failed to load background texture!\n" );
 		success = false;
 	}
 
-        if( !gBoxTexture.loadFromFile( "./Box.png" ) )
+        if( !gBoxTexture.loadFromFile( "./png/Box.png" ) )
 	{
 		printf( "Failed to load background texture!\n" );
 		success = false;
 	}
-        if(!gShadowTexture.loadFromFile("./Shadow.png")){
+        if(!gShadowTexture.loadFromFile("./png/Shadow.png")){
         printf( "Failed to load background texture!\n" );
 		success = false;
         }
-        if(!gEnemyTexture.loadFromFile("./Enemy.png")){
+        if(!gEnemyTexture.loadFromFile("./png/Enemy.png")){
         printf( "Failed to load background texture!\n" );
 		success = false;
         }
@@ -1968,7 +1968,7 @@ int main( int argc, char* args[] )
 
                         if(debug){
 
-                gFont = TTF_OpenFont( "./lazy.ttf", 20 );
+                gFont = TTF_OpenFont( "./png/lazy.ttf", 20 );
                 gTextTexture.loadFromRenderedText(jill.getPosXString()+" "+jill.getPosYString()+" "+jill.getVertString(), TextColor);
                 gTextTexture.render( DEBUG_X, DEBUG_Y,1 );
 
